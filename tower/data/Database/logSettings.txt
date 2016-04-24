@@ -1,0 +1,24 @@
+IS=FileName	_U=MemoryItemsLimit	_U=StringBufferSize	_B=StringTrim	_B=LogToFile	_U=FileFlushCount	_B=LogThreadId	_U=LogLevel	_B=LogEnabled
+
+#Normal logs captured from L2 client
+logs\P{PID}_{YEAR}{MONTH}{DAY},{HOUR}{MINUTE}{SECOND}_GameNormal.log	1000	1024	N	N	1	Y	0	Y
+logs\P{PID}_{YEAR}{MONTH}{DAY},{HOUR}{MINUTE}{SECOND}_GameError.log	1000	1024	N	N	1	Y	0	Y
+logs\P{PID}_{YEAR}{MONTH}{DAY},{HOUR}{MINUTE}{SECOND}_GameHook.log	1000	1024	N	N	1	Y	0	N
+logs\P{PID}_{YEAR}{MONTH}{DAY},{HOUR}{MINUTE}{SECOND}_GameHook2.log	1000	1024	N	N	1	Y	0	N
+logs\P{PID}_{YEAR}{MONTH}{DAY},{HOUR}{MINUTE}{SECOND}_GameNetwork.log	1000	1024	N	N	1	Y	0	Y
+logs\P{PID}_{YEAR}{MONTH}{DAY},{HOUR}{MINUTE}{SECOND}_GameEvents.log	1000	20480	N	N	1	Y	0	N
+logs\P{PID}_{YEAR}{MONTH}{DAY},{HOUR}{MINUTE}{SECOND}_GameOther.log	1000	1024	N	N	1	Y	0	Y
+
+#L2Tower base log
+logs\P{PID}_{YEAR}{MONTH}{DAY},{HOUR}{MINUTE}{SECOND}_L2Tower_Base.log	1000	1024	N	N	1	Y	0	Y
+logs\P{PID}_{YEAR}{MONTH}{DAY},{HOUR}{MINUTE}{SECOND}_L2Tower_Packets.log	1000	1024	N	N	1	Y	1	N
+logs\P{PID}_{YEAR}{MONTH}{DAY},{HOUR}{MINUTE}{SECOND}_L2Tower_Logic.log	1000	1024	N	N	1	Y	0	Y
+
+#Lineage 2 Chat logs (opened and closed durring login & logout)
+chat\{USER}_{YEAR}{MONTH}{DAY},{HOUR}{MINUTE}{SECOND}.chat	1000	512	N	Y	1	N	0	N
+chat\{USER}_{YEAR}{MONTH}{DAY},{HOUR}{MINUTE}{SECOND}.system	1000	512	N	N	1	N	0	Y
+chat\{USER}_{YEAR}{MONTH}{DAY},{HOUR}{MINUTE}{SECOND}.talk	1000	512	N	Y	1	N	0	N
+chat\{USER}_{YEAR}{MONTH}{DAY},{HOUR}{MINUTE}{SECOND}.trade	500	512	N	Y	1	N	0	N
+
+#Entry for L2Tower MYGUI engine logs, we use only file name and "LogEnabled" from this record.
+logs\P{PID}_{YEAR}{MONTH}{DAY},{HOUR}{MINUTE}{SECOND}_L2Tower-MyGUI.log	1	1	Y	Y	1	N	0	N

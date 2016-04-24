@@ -1,0 +1,20 @@
+SCONFIG = L2TConfig.GetConfig();
+SCONFIG_FILE = GetDir() .. '\\scripts\\gir.l2b';
+L2TConfig.SaveConfig(SCONFIG_FILE);
+moveDistance = 30;
+
+MoveTo(81553, 148135, -3464, moveDistance);
+MoveTo(81700, 148149, -3462, moveDistance);
+MoveTo(81895, 148230, -3462, moveDistance);
+MoveTo(82102, 148347, -3462, moveDistance);
+MoveTo(82157, 148382, -3462, moveDistance);
+MoveTo(82276, 148533, -3462, moveDistance);
+MoveTo(82402, 148721, -3462, moveDistance);
+MoveTo(82606, 148996, -3464, moveDistance);
+TargetNpc("Помощник Путешественников", 32327);
+MoveTo(82853, 149250, -3464, moveDistance);
+Talk();
+ClickLinkAndWait("blessing_list001.htm");
+ClickAndWait("menu_select?ask=-7&reply=2", "Receive supplemental magic.");
+MoveTo(82853, 149250, -3464, moveDistance);
+L2TConfig.LoadConfig(SCONFIG_FILE);

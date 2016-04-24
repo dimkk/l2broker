@@ -1,0 +1,7 @@
++=Skills|skill1388=Self buffs
+-selfbuffs=Self buffs=
++=Skills|skill1146=Pet buffs
+-petbuffs=Pet buffs=
++=Actions|action047=Radar
+-radar=Radar=
+

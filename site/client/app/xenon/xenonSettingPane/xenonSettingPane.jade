@@ -1,0 +1,57 @@
+div.settings-pane(ng-controller='xenonSettingPaneController')
+  a(href="#" data-toggle="settings-pane" data-animate="true")
+   div.row
+    div.col-md-4
+      div.user-info
+        div.user-image
+          a(href="")
+            img(src="XenonSettingPaneController").img-responsive.img-circle
+        div.user-details
+          h3
+            a(href="") Test
+            span.user-status.is-online
+          p.user-title WebDev
+          div.user-links
+            a(href="").btn.btn-primary Edit
+            a(href="").btn.btn-success Upgrade
+    div.col-md-8.link-blocks-env
+      div.links-block.left-sep
+        h4
+          span Notifications
+        ul.list-unstyled
+          li
+            input(type="checkbox").cbr.br-primary#sp-chk1
+            label(for="sp-chk1") Messages
+          li
+            input(type="checkbox").cbr.br-primary#sp-chk2
+            label(for="sp-chk2") Events
+          li
+            input(type="checkbox").cbr.br-primary#sp-chk3
+            label(for="sp-chk3") Updates
+          li
+            input(type="checkbox").cbr.br-primary#sp-chk4
+            label(for="sp-chk4") Server Uptime
+       div.links-block.left-sep
+        h4
+          a(href="")
+            span Help Desk
+        ul.list-unstyled
+          li 
+            a(href="")
+              i.fa-angle-right
+              Support Center
+          li 
+            a(href="")
+              i.fa-angle-right
+              Submit a Ticket
+           li 
+            a(href="")
+              i.fa-angle-right
+              Domain Protocol
+           li 
+            a(href="")
+              i.fa-angle-right
+              Terms of Service
+      
+            
+            

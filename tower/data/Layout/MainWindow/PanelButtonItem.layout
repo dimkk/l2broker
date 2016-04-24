@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position_real="0 0 1 1" align="HStretch Top" name="_Main">
+        <Widget type="ScrollView" skin="PanelEmpty" position_real="0 0 1 1" align="Stretch" name="_buttons">
+			<Property key="VisibleHScroll" value="false"/>
+        </Widget>
+    </Widget>
+</MyGUI>

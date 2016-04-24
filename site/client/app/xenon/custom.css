@@ -1,0 +1,83 @@
+
+/**
+ *
+ * Apply your custom CSS here
+ *
+*/
+
+.und{
+    text-decoration: underline;
+}
+
+.nav.nav-tabs+.tab-content{
+        background: #FFF;
+    padding: 0px !important; 
+    margin-bottom: 0px !important; 
+}
+body {	
+}
+
+a {
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+html,body{height:100%;}
+.page-container{height: 100%;}
+
+.loading-container{
+    position: relative;
+    /* left: 0; */
+    /* top: 0; */
+    /* bottom: 0; */
+    /* right: 0; */
+    overflow: hidden;
+    height: 100px;
+    width: 100%;
+    background: transparent;
+    z-index: 10000;
+    -webkit-perspective: 10000;
+    -moz-perspective: 10000;
+    perspective: 10000;
+    -webkit-perspective: 10000px;
+    -moz-perspective: 10000px;
+    perspective: 10000px;
+    zoom: 1;
+    filter: alpha(opacity=100);
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+    -webkit-transition: all 800ms ease-in-out;
+    -moz-transition: all 800ms ease-in-out;
+    -o-transition: all 800ms ease-in-out;
+    transition: all 800ms ease-in-out;
+}
+.loader-content-2 {
+    -webkit-animation: loaderAnimate2 1000ms linear infinite;
+    -moz-animation: loaderAnimate2 1000ms linear infinite;
+    -o-animation: loaderAnimate2 1000ms linear infinite;
+    animation: loaderAnimate2 1000ms linear infinite;
+    clip: rect(0,30px,30px,15px);
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+}
+.loader-content-2:after {
+    -webkit-animation: loaderAnimate22 1000ms ease-in-out infinite;
+    -moz-animation: loaderAnimate22 1000ms ease-in-out infinite;
+    -o-animation: loaderAnimate22 1000ms ease-in-out infinite;
+    animation: loaderAnimate22 1000ms ease-in-out infinite;
+    clip: rect(0,30px,30px,15px);
+    content: '';
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    background-color: black;
+}

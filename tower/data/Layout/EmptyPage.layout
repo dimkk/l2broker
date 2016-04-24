@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelSkin" position="0 0 339 382" name="_Main">
+        <Property key="Visible" value="true"/>
+        <UserString key="" value=""/>
+        <Widget type="Widget" skin="PanelSkin" position="0 0 340 24">
+            <Property key="Colour" value="0.584795 0.584795 0.584795"/>
+            <Widget type="Button" skin="CheckBox" position="3 1 70 20" name="globalenable">
+                <Property key="Caption" value="Enable"/>
+                <Property key="Colour" value="1 0 0"/>
+                <Property key="TextColour" value="1 0.181287 0.181287"/>
+                <Property key="ModeImage" value="false"/>
+                <Property key="FontName" value="BASE.14"/>
+            </Widget>
+        </Widget>
+    </Widget>
+</MyGUI>

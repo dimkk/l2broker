@@ -1,0 +1,64 @@
+div.page-title
+	div.title-env
+			h1.title Ассортимент RPG Club X7
+			p.description Здесь вы можете посмотреть стоимость товаров как для продажи, так и для покупки	
+				
+div.row 
+	div.col-md-12(style="min-height:1000px;height:100%;") 
+		div.panel.panel-default
+			//div.panel-heading
+				h3.panel-title
+				
+			div.panel-body
+					div.input-group.input-group-lg.input-group-minimal
+						span.input-group-addon(ng-click="vm.find()")
+							i.linecons-search
+						input(type="text" ng-model="vm.model.search" ng-keyup="$event.keyCode == 13 && vm.find(false, 1)" ng-model-options="{ debounce: 0 }" ).form-control.input-lg
+					//typeahead-min-length="3" typeahead-wait-ms="300" uib-typeahead="address for address in vm.getAutoComplete($viewValue)"
+					div(style="margin-top:5px;margin-bottom:5px;")
+						span Показать итемы: 
+							a.pointer(ng-click="vm.setLaterThen('fresh')" ng-class="{und:vm.laterThen === 'fresh'}") свежие,
+							a.pointer(ng-click="vm.setLaterThen('hour')" ng-class="{und:vm.laterThen === 'hour'}") за час,
+							a.pointer(ng-click="vm.setLaterThen('hours')" ng-class="{und:vm.laterThen === 'hours'}") за 2 часа,
+							a.pointer(ng-click="vm.setLaterThen('day')" ng-class="{und:vm.laterThen === 'day'}") за день,
+							a.pointer(ng-click="vm.setLaterThen('month')" ng-class="{und:vm.laterThen === 'month'}") за месяц
+						span(style="padding-left:10px;") Сортировки: 
+							a.pointer(ng-click="vm.changeSortPrice('averageSellPrice', -1)" ng-class="{und:vm.params.sortField === 'averageSellPrice' && vm.params.sortOrder === -1}") самая дорогая продажа,
+							a.pointer(ng-click="vm.changeSortPrice('averageBuyPrice', -1)" ng-class="{und:vm.params.sortField === 'averageBuyPrice' && vm.params.sortOrder === -1}") самая дорогая покупка,
+							a.pointer(ng-click="vm.changeSortPrice('sellersCount', -1)" ng-class="{und:vm.params.sortField === 'sellersCount' && vm.params.sortOrder === -1}") самые популярные на продажу,
+							a.pointer(ng-click="vm.changeSortPrice('buyersCount', -1)" ng-class="{und:vm.params.sortField === 'buyersCount' && vm.params.sortOrder === -1}") самые популярные на покупку
+					div.table-wrapper.dataTables_wrapper.form-inline.dt-bootstrap
+						div.btn-toolbar
+							div.table-responsive
+								table.table.table-small-font.table-bordered.table-hover.dataTable(width="100%" style="width:100%")
+									thead
+										tr(role="row")
+											th(style="width:30px;") 
+											th(style="width:30%;")  Название
+											th.pointer(ng-click="vm.changeSortPrice('averageSellPrice')" ng-class="{'sorting':vm.isClass('averageSellPrice', 0), 'sorting_asc': vm.isClass('averageSellPrice', 1), 'sorting_desc': vm.isClass('averageSellPrice', -1)}")  
+												i.fa.fa-question-circle(tooltip='В расчёт берется средняя цена появления итема в ассортименте 20 последних отсканированных продавцов') 
+												span(style="margin-left:5px;") Продают
+												
+											th.pointer(ng-click="vm.changeSortPrice('averageBuyPrice')" ng-class="{'sorting':vm.isClass('averageBuyPrice', 0), 'sorting_asc': vm.isClass('averageBuyPrice', 1), 'sorting_desc': vm.isClass('averageBuyPrice', -1)}") 
+												i.fa-question-circle(tooltip='В расчёт берется средняя цена итема в ассортименте 20 последних отсканированных покупателей')
+												span(style="margin-left:5px;") Покупают
+												
+											th.pointer(ng-click="vm.changeSortPrice('sellersCount')" ng-class="{'sorting':vm.isClass('sellersCount', 0), 'sorting_asc': vm.isClass('sellersCount', 1), 'sorting_desc': vm.isClass('sellersCount', -1)}")
+												i.fa-question-circle(tooltip='Количество магазинов в которых товар был выставлен на продажу за последние сутки')
+												span(style="margin-left:5px;") Продавцов 
+											
+											th.pointer(ng-click="vm.changeSortPrice('buyersCount')" ng-class="{'sorting':vm.isClass('buyersCount', 0), 'sorting_asc': vm.isClass('buyersCount', 1), 'sorting_desc': vm.isClass('buyersCount', -1)}")  
+												i.fa-question-circle(tooltip='Количество магазинов в которы товарх был выставлен  на покупку за последние сутки')						
+												span(style="margin-left:5px;") Покупателей
+									tbody(infinite-scroll='vm.findMore()' infinite-scroll-disabled='vm.loading || vm.scrollDisable' infinite-scroll-distance='1')
+										tr(ng-repeat="item in vm.items track by $index" ng-click="vm.goTo(item)").pointer
+												td 
+													img(src="{{item.imgSrc}}")
+												td {{item.title}}
+												td {{item.averageSellPrice | number:0}}
+												td {{item.averageBuyPrice | number:0}}
+												td {{item.sellersCount}}
+												td {{item.buyersCount}}
+					div.loading-container(ng-show='vm.loading')
+						div.loader-content-2
+											

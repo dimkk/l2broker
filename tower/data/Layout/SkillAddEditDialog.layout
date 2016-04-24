@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Window" skin="WindowC" position="0 0 330 295" layer="Dialog" name="Root">
+        <Property key="NeedMouse" value="true"/>
+        <Property key="NeedKey" value="true"/>
+        <Property key="Alpha" value="1"/>
+        <Property key="Movable" value="false"/>
+        <Property key="Snap" value="true"/>
+        <Widget type="Widget" skin="PanelSkin" position="5 5 23 23">
+            <Widget type="ImageBox" skin="ImageBox" position="3 3 16 16" name="_image"/>
+        </Widget>
+        <Widget type="ComboBox" skin="ComboBox" position="30 7 285 20" name="_skillselect">
+            <Property key="MaxListLength" value="200"/>
+            <Property key="ModeDrop" value="true"/>
+            <Property key="SmoothShow" value="true"/>
+            <Property key="FlowDirection" value="TopToBottom"/>
+            <Property key="FontName" value="BASE.11"/>
+            <Property key="TextAlign" value="Center"/>
+        </Widget>
+        <Widget type="Widget" skin="PanelSkin" position="5 35 310 190">
+            <Widget type="Button" skin="CheckBox" position="10 160 110 20" name="_targetrequired">
+                <Property key="Caption" value="Target required"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="10 7 50 15">
+                <Property key="Caption" value="Priority :"/>
+                <Property key="FontName" value="BASE.14"/>
+            </Widget>
+            <Widget type="ComboBox" skin="ComboBox" position="65 5 235 20" name="_priority">
+                <Property key="FontName" value="BASE.11"/>
+                <Property key="AddItem" value="Very low"/>
+                <Property key="AddItem" value="Low"/>
+                <Property key="AddItem" value="Normal"/>
+                <Property key="AddItem" value="High"/>
+                <Property key="AddItem" value="Very high"/>
+                <Property key="MaxListLength" value="200"/>
+                <Property key="ModeDrop" value="true"/>
+                <Property key="TextAlign" value="Center"/>
+            </Widget>
+            <Widget type="Button" skin="CheckBox" position="220 160 75 20" name="_enabled">
+                <Property key="Caption" value="Enabled"/>
+                <Property key="FontName" value="BASE.15"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="10 27 50 15">
+                <Property key="Caption" value="Reuse :"/>
+                <Property key="FontName" value="BASE.14"/>
+            </Widget>
+            <Widget type="EditBox" skin="EditBox" position="65 25 100 20" name="_reuseEdit">
+                <Property key="TextAlign" value="Center"/>
+            </Widget>
+            <Widget type="Button" skin="CheckBox" position="210 25 90 20" name="_autodetect">
+                <Property key="Caption" value="Autodetect"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="170 27 30 15">
+                <Property key="Caption" value="sec."/>
+                <Property key="FontName" value="BASE.14"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="10 50 55 12">
+                <Property key="Caption" value="Condition:"/>
+                <Property key="FontName" value="BASE.11"/>
+            </Widget>
+            <Widget type="EditBox" skin="EditBoxStretch" position="10 65 290 90" name="_condition">
+                <Property key="FontName" value="BASE.11"/>
+                <Property key="TextAlign" value="Left Top"/>
+                <Property key="MultiLine" value="true"/>
+                <Property key="WordWrap" value="true"/>
+                <Property key="VisibleHScroll" value="true"/>
+            </Widget>
+            <Widget type="Button" skin="Button" position="250 50 50 15" name="_help">
+                <Property key="Caption" value="Help"/>
+                <Property key="FontName" value="BASE.11"/>
+            </Widget>
+        </Widget>
+        <Widget type="Button" skin="Button" position="80 230 85 25" name="_ok">
+            <Property key="Caption" value="Save"/>
+            <Property key="FontName" value="BASE.14"/>
+        </Widget>
+        <Widget type="Button" skin="Button" position="165 230 85 25" name="_cancel">
+            <Property key="Caption" value="Cancel"/>
+            <Property key="FontName" value="BASE.14"/>
+        </Widget>
+    </Widget>
+</MyGUI>

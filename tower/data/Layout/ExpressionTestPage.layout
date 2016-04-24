@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelSkin" position="0 0 628 455" name="_Main">
+        <Property key="Visible" value="true"/>
+        <Widget type="EditBox" skin="EditBoxStretch" position="5 10 615 100" name="testEdit">
+            <Property key="WordWrap" value="true"/>
+            <Property key="MultiLine" value="true"/>
+            <Property key="MaxTextLength" value="1024"/>
+        </Widget>
+        <Widget type="Button" skin="Button" position="480 115 135 20" name="testButton">
+            <Property key="Caption" value="Test expression"/>
+        </Widget>
+        <Widget type="TextBox" skin="TextBox" position="10 116 55 15">
+            <Property key="Caption" value="Output:"/>
+        </Widget>
+        <Widget type="EditBox" skin="EditBox" position="70 115 405 20" name="testOutput">
+            <Property key="ReadOnly" value="true"/>
+            <Property key="TextAlign" value="Center"/>
+        </Widget>
+        <Widget type="EditBox" skin="EditBoxStretch" position="5 145 615 300" name="testHelp">
+            <Property key="MultiLine" value="true"/>
+            <Property key="ReadOnly" value="true"/>
+            <Property key="NeedKey" value="false"/>
+            <Property key="NeedMouse" value="true"/>
+            <Property key="Enabled" value="true"/>
+            <Property key="Colour" value="0.467836 0.467836 0.467836"/>
+            <Property key="WordWrap" value="true"/>
+            <Property key="FontName" value="Anonymous_18.ttf.18"/>
+            <Property key="MaxTextLength" value="1000000"/>
+        </Widget>
+    </Widget>
+</MyGUI>

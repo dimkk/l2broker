@@ -1,0 +1,13 @@
+div.page-title
+	div.title-env
+			h1.title
+				img(src="{{vm.itemSell.imgSrc}}" style="margin-right:15px;")
+				{{vm.itemSell.title.trim()}}
+				
+div.row 
+	div.col-md-12(style="min-height:1000px;height:100%") 
+		div.panel.panel-default
+			div.panel-heading
+				tabs(data='vm.tabData' type='tabs')
+			div.panel-body
+				ui-view

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelSkin" position="0 0 339 382" name="_Main">
+        <Property key="Visible" value="true"/>
+        <UserString key="" value=""/>
+        <Widget type="Widget" skin="PanelSkin" position="0 20 340 360">
+            <Property key="Visible" value="true"/>
+            <Property key="Enabled" value="true"/>
+            <Property key="NeedMouse" value="true"/>
+            <Widget type="MultiListBox" skin="MultiListBox" position="5 5 330 275" name="ListBox">
+                <Property key="NeedMouse" value="true"/>
+                <Widget type="MultiListItem" skin="" position="0 0 30 246">
+                    <Property key="Caption" value="[   ]"/>
+                    <Property key="FontName" value="BASE.11"/>
+                    <Property key="ItemWidth" value="30"/>
+                    <Property key="ItemResizingPolicy" value="Fixed"/>
+                    <Property key="TextAlign" value="Center"/>
+                </Widget>
+                <Widget type="MultiListItem" skin="" position="30 0 146 246">
+                    <Property key="Caption" value="Name"/>
+                    <Property key="ItemResizingPolicy" value="Fill"/>
+                    <Property key="FontName" value="BASE.11"/>
+                    <Property key="ItemWidth" value="150"/>
+                </Widget>
+                <Widget type="MultiListItem" skin="" position="176 0 146 246">
+                    <Property key="Caption" value="Configuration"/>
+                    <Property key="ItemResizingPolicy" value="Fill"/>
+                    <Property key="FontName" value="BASE.11"/>
+                </Widget>
+            </Widget>
+            <Widget type="Button" skin="Button" position="115 325 55 15" name="bdelete">
+                <Property key="Caption" value="Delete"/>
+                <Property key="Colour" value="1 0.263158 0.263158"/>
+                <Property key="FontName" value="BASE.11"/>
+            </Widget>
+            <Widget type="Button" skin="Button" position="5 325 55 15" name="benable">
+                <Property key="Caption" value="Enable"/>
+                <Property key="Colour" value="1 0.933205 0.497076"/>
+                <Property key="FontName" value="BASE.11"/>
+            </Widget>
+            <Widget type="Button" skin="Button" position="60 325 55 15" name="bedit">
+                <Property key="Caption" value="Edit"/>
+                <Property key="Colour" value="0.362573 1 0.850603"/>
+                <Property key="FontName" value="BASE.11"/>
+            </Widget>
+            <Widget type="Button" skin="Button" position="170 325 60 15" name="bmoveup">
+                <Property key="Caption" value="Move Up"/>
+                <Property key="Colour" value="1 0.678363 0.987436"/>
+                <Property key="FontName" value="BASE.11"/>
+            </Widget>
+            <Widget type="Button" skin="Button" position="170 340 60 15" name="bmovedown">
+                <Property key="Caption" value="Move Down"/>
+                <Property key="Colour" value="1 0.678363 0.987436"/>
+                <Property key="FontName" value="BASE.11"/>
+            </Widget>
+            <Widget type="Button" skin="Button" position="5 340 55 15" name="benableall">
+                <Property key="FontName" value="BASE.11"/>
+                <Property key="Caption" value="Enable All"/>
+                <Property key="Colour" value="0.546784 0.532164 1"/>
+            </Widget>
+            <Widget type="Button" skin="Button" position="60 340 55 15" name="bdisableall">
+                <Property key="Colour" value="0.546784 0.532164 1"/>
+                <Property key="Caption" value="Disable All"/>
+                <Property key="FontName" value="BASE.11"/>
+            </Widget>
+            <Widget type="Button" skin="Button" position="115 340 55 15" name="bdeleteall">
+                <Property key="Colour" value="1 0 0"/>
+                <Property key="Caption" value="Delete All"/>
+                <Property key="FontName" value="BASE.11"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="237 320 35 15">
+                <Property key="Caption" value="Items:"/>
+                <Property key="FontName" value="BASE.11"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="275 320 55 15" name="iitemscount">
+                <Property key="Colour" value="1 1 1"/>
+                <Property key="FontName" value="BASE.14"/>
+                <Property key="Caption" value="0"/>
+                <Property key="TextAlign" value="Center"/>
+                <Property key="TextColour" value="0.523642 0.842105 0.462912"/>
+            </Widget>
+            <Widget type="Button" skin="Button" position="235 335 100 20" name="badd">
+                <Property key="Colour" value="0.0078125 1 0"/>
+                <Property key="Caption" value="Add new item"/>
+            </Widget>
+            <Widget type="EditBox" skin="EditBoxStretch" position="5 280 330 40" name="details">
+                <Property key="FontName" value="BASE.11"/>
+                <Property key="TextAlign" value="Left Top"/>
+                <Property key="MultiLine" value="true"/>
+                <Property key="WordWrap" value="true"/>
+                <Property key="ReadOnly" value="true"/>
+                <Property key="VisibleVScroll" value="true"/>
+                <Property key="VisibleHScroll" value="true"/>
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelSkin" position="0 0 340 24">
+            <Property key="Colour" value="0.584795 0.584795 0.584795"/>
+            <Widget type="Button" skin="CheckBox" position="3 1 70 20" name="globalenable">
+                <Property key="Caption" value="Enable"/>
+                <Property key="Colour" value="1 0 0"/>
+                <Property key="TextColour" value="1 0.181287 0.181287"/>
+                <Property key="ModeImage" value="false"/>
+                <Property key="FontName" value="BASE.14"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="255 4 35 13" name="rangetitle">
+                <Property key="Caption" value="Range:"/>
+                <Property key="FontName" value="BASE.11"/>
+                <Property key="Visible" value="false"/>
+            </Widget>
+            <Widget type="EditBox" skin="EditBox" position="290 3 45 16" name="rangeedit">
+                <Property key="TextAlign" value="Center"/>
+                <Property key="FontName" value="BASE.11"/>
+                <Property key="Visible" value="false"/>
+            </Widget>
+        </Widget>
+    </Widget>
+</MyGUI>

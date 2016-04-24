@@ -1,0 +1,21 @@
+SCONFIG = L2TConfig.GetConfig();
+SCONFIG_FILE = GetDir() .. '\\scripts\\giran.l2b';
+L2TConfig.SaveConfig(SCONFIG_FILE);
+moveDistance = 30;
+
+MoveTo(81551, 148125, -3464, moveDistance);
+MoveTo(81560, 148104, -3464, moveDistance);
+TargetNpc("Проповедник Судьбы", 31231);
+MoveTo(81765, 148123, -3462, moveDistance);
+MoveTo(81940, 148198, -3462, moveDistance);
+MoveTo(82162, 148279, -3462, moveDistance);
+MoveTo(82289, 148445, -3462, moveDistance);
+MoveTo(82421, 148567, -3464, moveDistance);
+MoveTo(82536, 148666, -3464, moveDistance);
+MoveTo(82649, 148747, -3464, moveDistance);
+MoveTo(82778, 148846, -3464, moveDistance);
+MoveTo(82848, 149066, -3464, moveDistance);
+TargetNpc("Помощник Путешественников", 32327);
+MoveTo(82868, 149247, -3464, moveDistance);
+Talk();
+ClickLinkAndWait("blessing_list001.htm");

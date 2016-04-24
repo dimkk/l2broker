@@ -1,0 +1,22 @@
+SCONFIG = L2TConfig.GetConfig();
+SCONFIG_FILE = GetDir() .. '\\scripts\\girToTaurin.l2b';
+L2TConfig.SaveConfig(SCONFIG_FILE);
+moveDistance = 30;
+
+MoveTo(82135, 148128, -3470, moveDistance);
+MoveTo(81937, 148077, -3470, moveDistance);
+MoveTo(81823, 148044, -3470, moveDistance);
+MoveTo(81598, 147604, -3470, moveDistance);
+MoveTo(81505, 147225, -3534, moveDistance);
+Target("lSunny");
+Target("salam");
+MoveTo(81555, 146894, -3534, moveDistance);
+MoveTo(81521, 146951, -3534, moveDistance);
+MoveTo(81515, 146906, -3534, moveDistance);
+MoveTo(81515, 146906, -3534, moveDistance);
+MoveTo(81515, 146906, -3534, moveDistance);
+MoveTo(81515, 146906, -3534, moveDistance);
+MoveTo(81515, 146906, -3534, moveDistance);
+MoveTo(81108, 146940, -3534, moveDistance);
+MoveTo(80594, 146955, -3534, moveDistance);
+L2TConfig.LoadConfig(SCONFIG_FILE);

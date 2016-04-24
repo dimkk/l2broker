@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FolderPatch />
+  <SelectedFonts>
+    <string>33 127</string>
+    <string>256 383</string>
+    <string>128 255</string>
+    <string>8448 8527</string>
+  </SelectedFonts>
+  <AutoKillAfter60Seconds>false</AutoKillAfter60Seconds>
+  <ChangeWindowName>false</ChangeWindowName>
+  <CloseAfterInjection>false</CloseAfterInjection>
+  <DontCheckForUpdate>false</DontCheckForUpdate>
+  <L2ProcessPath>C:\games\hf\system\l2.exe</L2ProcessPath>
+  <MonitorAndInject>false</MonitorAndInject>
+  <ProcessCheckTime>15</ProcessCheckTime>
+  <RandomizeDll>true</RandomizeDll>
+  <RunL2Process>false</RunL2Process>
+  <StartAppHidden>false</StartAppHidden>
+  <InjectLib>0</InjectLib>
+</Settings>

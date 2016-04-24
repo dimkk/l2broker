@@ -1,0 +1,15 @@
+
+div.page-container
+		div.sidebar-menu.toggle-others.fixed(xenon-side-menu class="{{broker.sideMenuCollapsed ? 'collapsed' : ''}}")
+		div.main-content
+			nav(xenon-horizontal-menu role="navigation").navbar.user-info-navbar
+			ui-view.anim
+			footer.main-footer.footer-type-1
+				div.footer-inner
+					div.footer-text L2Broker, 2015, v0.1.0 
+						a(href="mailto:homchevp@gmail.com") homchevp@gmail.com
+					
+div.page-loading-overlay
+	div.loader-2
+
+	

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelSkin" position="0 0 628 455" name="_Main">
+        <Property key="Visible" value="true"/>
+        <UserString key="" value=""/>
+        <Widget type="Widget" skin="PanelSkin" position="10 40 605 405">
+            <Property key="Visible" value="true"/>
+            <Property key="Enabled" value="true"/>
+            <Widget type="MultiListBox" skin="MultiListBox" position="10 30 585 265" name="ListBox">
+                <Property key="NeedMouse" value="true"/>
+                <Widget type="MultiListItem" skin="" position="0 0 50 236">
+                    <Property key="Caption" value="Status"/>
+                    <Property key="ItemWidth" value="50"/>
+                    <Property key="ItemResizingPolicy" value="Fixed"/>
+                    <Property key="TextAlign" value="Center"/>
+                </Widget>
+                <Widget type="MultiListItem" skin="" position="50 0 207 236">
+                    <Property key="Caption" value="Skill Name"/>
+                    <Property key="ItemResizingPolicy" value="Fill"/>
+                </Widget>
+                <Widget type="MultiListItem" skin="" position="257 0 80 236">
+                    <Property key="Caption" value="Reuse [sec]"/>
+                    <Property key="ItemWidth" value="80"/>
+                    <Property key="ItemResizingPolicy" value="Fixed"/>
+                    <Property key="TextAlign" value="Center"/>
+                </Widget>
+                <Widget type="MultiListItem" skin="" position="337 0 80 236">
+                    <Property key="Caption" value="Target"/>
+                    <Property key="ItemWidth" value="80"/>
+                    <Property key="ItemResizingPolicy" value="Fixed"/>
+                    <Property key="TextAlign" value="Center"/>
+                </Widget>
+                <Widget type="MultiListItem" skin="" position="417 0 80 236">
+                    <Property key="Caption" value="Condition"/>
+                    <Property key="ItemWidth" value="80"/>
+                    <Property key="ItemResizingPolicy" value="Fixed"/>
+                    <Property key="TextAlign" value="Center"/>
+                </Widget>
+                <Widget type="MultiListItem" skin="" position="497 0 80 236">
+                    <Property key="Caption" value="Priority"/>
+                    <Property key="ItemWidth" value="80"/>
+                    <Property key="ItemResizingPolicy" value="Fixed"/>
+                    <Property key="TextAlign" value="Center"/>
+                </Widget>
+            </Widget>
+            <Widget type="Button" skin="Button" position="10 5 90 25" name="deleteBtn">
+                <Property key="Caption" value="Delete"/>
+            </Widget>
+            <Widget type="Widget" skin="PanelSkin" position="10 300 585 95">
+                <Property key="Colour" value="0.584795 0.584795 0.584795"/>
+                <Widget type="Button" skin="Button" position="495 5 85 80" name="AddBtn">
+                    <Property key="Caption" value="Add"/>
+                    <Property key="Colour" value="0.167026 0.77193 0.339518"/>
+                </Widget>
+                <Widget type="ComboBox" skin="ComboBox" position="65 9 280 20" name="SkillList">
+                    <Property key="ModeDrop" value="true"/>
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" position="35 10 30 15">
+                    <Property key="Caption" value="Skill:"/>
+                </Widget>
+                <Widget type="EditBox" skin="EditBox" position="245 34 80 20" name="reuse">
+                    <Property key="TextAlign" value="Center"/>
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" position="175 35 45 15">
+                    <Property key="Caption" value="Reuse:"/>
+                    <Property key="FontHeight" value="16"/>
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" position="330 35 25 15">
+                    <Property key="Caption" value="sec"/>
+                </Widget>
+                <Widget type="Button" skin="Button" position="495 55 85 30" name="UpdateBtn">
+                    <Property key="Caption" value="Cancel"/>
+                    <Property key="Colour" value="0.945951 1 0.0116959"/>
+                    <Property key="Visible" value="false"/>
+                </Widget>
+                <Widget type="Button" skin="CheckBox" position="5 35 20 20" name="enabledItem">
+                    <Property key="Colour" value="1 0.94401 0.666667"/>
+                </Widget>
+                <Widget type="Button" skin="CheckBox" position="365 34 115 20" name="requireTarget">
+                    <Property key="Caption" value="Require target"/>
+                </Widget>
+                <Widget type="Button" skin="CheckBox" position="225 34 20 20" name="autoDetect"/>
+                <Widget type="TextBox" skin="TextBox" position="350 10 50 15">
+                    <Property key="Caption" value="Priority:"/>
+                </Widget>
+                <Widget type="ComboBox" skin="ComboBox" position="400 9 90 20" name="priority">
+                    <Property key="ModeDrop" value="true"/>
+                    <Property key="AddItem" value="Very low"/>
+                    <Property key="AddItem" value="Low"/>
+                    <Property key="AddItem" value="Normal"/>
+                    <Property key="AddItem" value="High"/>
+                    <Property key="AddItem" value="Very high"/>
+                    <Property key="SmoothShow" value="true"/>
+                    <Property key="TextAlign" value="Center"/>
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" position="35 35 70 15">
+                    <Property key="Caption" value="Condition:"/>
+                </Widget>
+                <Widget type="EditBox" skin="EditBoxStretch" position="35 55 450 35" name="condition">
+                    <Property key="MaxTextLength" value="1024"/>
+                    <Property key="MultiLine" value="true"/>
+                    <Property key="FontName" value="DejaVuSansFont.11"/>
+                    <Property key="WordWrap" value="true"/>
+                </Widget>
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelSkin" position="10 7 605 28">
+            <Property key="Colour" value="0.584795 0.584795 0.584795"/>
+            <Widget type="Button" skin="CheckBox" position="5 4 70 20" name="enableBtn">
+                <Property key="Caption" value="Enable"/>
+                <Property key="Colour" value="1 0 0"/>
+                <Property key="TextColour" value="1 0.181287 0.181287"/>
+            </Widget>
+        </Widget>
+    </Widget>
+    <CodeGeneratorSettings>
+        <Property key="IncludeDirectory" value=""/>
+        <Property key="PanelName" value="lol"/>
+        <Property key="PanelNamespace" value="olo"/>
+        <Property key="SourceDirectory" value=""/>
+    </CodeGeneratorSettings>
+</MyGUI>

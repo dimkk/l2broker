@@ -1,0 +1,14 @@
+ul.user-info-menu.left-links.list-inline.list-unstyled
+	li.hidden-sm.hidden-xs
+		a(href="#" ng-click="broker.sideMenuCollapsed = !broker.sideMenuCollapsed" style="top:0px;")
+			i.fa-bars
+	li.language-switcher
+		a(href="#" ng-click="broker.switchLanguage()" style="top:0px;")
+			img(src="assets/images/flags/flag-{{'FLAG' | translate}}.png")
+			{{'CURRENT_LANGUAGE' | translate}}
+ul.user-info-menu.right-links.list-inline.list-unstyled
+	li.user-profile
+		a(href="#" ui-sref="broker.me" style="top:0px;")
+			img(src="assets/images/user-4.png" width="28").img-circle.img-inline.userpic-32
+			span {{'GUEST' | translate}}
+				

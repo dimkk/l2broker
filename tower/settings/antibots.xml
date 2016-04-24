@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AntibotEntries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <items>
+    <AntibotEntry>
+      <Name>No antibot</Name>
+      <Value>0</Value>
+    </AntibotEntry>
+    <AntibotEntry>
+      <Name>Universal</Name>
+      <Value>1</Value>
+    </AntibotEntry>
+    <AntibotEntry>
+      <Name>L2.ws</Name>
+      <Value>2</Value>
+    </AntibotEntry>
+    <AntibotEntry>
+      <Name>Sublimity</Name>
+      <Value>3</Value>
+    </AntibotEntry>
+    <AntibotEntry>
+      <Name>L2EX/Luna/RaidFight/L2Destiny</Name>
+      <Value>4</Value>
+    </AntibotEntry>
+    <AntibotEntry>
+      <Name>L2Hero/L2-2012/L2World/L2Pharos</Name>
+      <Value>5</Value>
+    </AntibotEntry>
+    <AntibotEntry>
+      <Name>Dex - inject @ character selection</Name>
+      <Value>6</Value>
+    </AntibotEntry>
+    <AntibotEntry>
+      <Name>L2Toxic - inject @ character selection</Name>
+      <Value>7</Value>
+    </AntibotEntry>
+  </items>
+</AntibotEntries>

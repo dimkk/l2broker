@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelSkin" position="0 0 628 455" name="_Main">
+        <Property key="Visible" value="false"/>
+        <UserString key="" value=""/>
+        <Widget type="Widget" skin="PanelSkin" position="10 40 605 405">
+            <Property key="Visible" value="true"/>
+            <Property key="Enabled" value="true"/>
+            <Widget type="MultiListBox" skin="MultiListBox" position="10 30 585 300" name="CraftListBox">
+                <Property key="Colour" value="0.74269 0.74269 0.74269"/>
+                <Widget type="MultiListItem" skin="" position="0 0 430 271">
+                    <Property key="Caption" value="Recipe name:"/>
+                    <Property key="ItemResizingPolicy" value="Fixed"/>
+                    <Property key="ItemWidth" value="430"/>
+                </Widget>
+                <Widget type="MultiListItem" skin="" position="430 0 70 271">
+                    <Property key="Caption" value="Num &lt;:"/>
+                    <Property key="ItemResizingPolicy" value="Fixed"/>
+                    <Property key="ItemWidth" value="70"/>
+                </Widget>
+                <Widget type="MultiListItem" skin="" position="500 0 77 271">
+                    <Property key="Caption" value="Weidht% &lt;:"/>
+                    <Property key="ItemResizingPolicy" value="Fill"/>
+                </Widget>
+            </Widget>
+            <Widget type="Button" skin="Button" position="10 5 90 25" name="CraftDelete">
+                <Property key="Caption" value="Delete"/>
+            </Widget>
+            <Widget type="Widget" skin="PanelSkin" position="10 335 585 60">
+                <Property key="Colour" value="0.584795 0.584795 0.584795"/>
+                <Widget type="Button" skin="Button" position="495 5 85 50" name="CraftAdd">
+                    <Property key="Caption" value="Add"/>
+                    <Property key="Colour" value="0.167026 0.77193 0.339518"/>
+                </Widget>
+                <Widget type="ComboBox" skin="ComboBox" position="55 5 435 25" name="CraftComboBox">
+                    <Property key="ModeDrop" value="true"/>
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" position="5 8 50 22">
+                    <Property key="Caption" value="Recipe:"/>
+                </Widget>
+                <Widget type="EditBox" skin="EditBox" position="200 35 110 20" name="CraftEdit1"/>
+                <Widget type="TextBox" skin="TextBox" position="320 35 120 20">
+                    <Property key="Caption" value="Only if weight% &lt;:"/>
+                </Widget>
+                <Widget type="EditBox" skin="EditBox" position="440 35 45 20" name="CraftEdit2">
+                    <Property key="MaxTextLength" value="3"/>
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" position="5 35 195 20">
+                    <Property key="Caption" value="Only if num &lt;(0 for unlimited):"/>
+                </Widget>
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelSkin" position="10 7 605 28">
+            <Property key="Colour" value="0.584795 0.584795 0.584795"/>
+            <Widget type="Button" skin="CheckBox" position="5 4 70 20" name="CraftOnOff">
+                <Property key="Caption" value="Enable"/>
+                <Property key="Colour" value="1 0 0"/>
+                <Property key="TextColour" value="1 0.181287 0.181287"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="450 4 70 20">
+                <Property key="Caption" value="Delay(ms):"/>
+            </Widget>
+            <Widget type="EditBox" skin="EditBox" position="520 4 75 20" name="DelayEdit"/>
+            <Widget type="TextBox" skin="TextBox" position="255 4 60 20">
+                <Property key="Caption" value="MP% Min:"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="350 4 65 20">
+                <Property key="Caption" value="MP% Max:"/>
+            </Widget>
+            <Widget type="EditBox" skin="EditBox" position="315 4 35 20" name="MPmin">
+                <Property key="MaxTextLength" value="3"/>
+            </Widget>
+            <Widget type="EditBox" skin="EditBox" position="415 4 35 20" name="MPmax">
+                <Property key="MaxTextLength" value="3"/>
+            </Widget>
+        </Widget>
+    </Widget>
+</MyGUI>

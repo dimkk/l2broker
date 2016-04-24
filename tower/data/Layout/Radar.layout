@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelSkin" position="0 0 339 382" name="_Main">
+        <Property key="NeedMouse" value="true"/>
+        <Property key="Visible" value="true"/>
+        <Property key="Alpha" value="1"/>
+        <Widget type="MultiListBox" skin="MultiListBox" position="0 280 335 100" name="_Filters">
+            <Property key="NeedMouse" value="true"/>
+            <Widget type="MultiListItem" skin="" position="0 0 35 71">
+                <Property key="Caption" value="Show"/>
+                <Property key="FontHeight" value="5"/>
+                <Property key="TextAlign" value="Center"/>
+            </Widget>
+            <Widget type="MultiListItem" skin="" position="35 0 192 71">
+                <Property key="Caption" value="Type"/>
+                <Property key="ItemWidth" value="80"/>
+                <Property key="ItemResizingPolicy" value="Fill"/>
+                <Property key="FontHeight" value="5"/>
+                <Property key="TextAlign" value="Left VCenter"/>
+            </Widget>
+            <Widget type="MultiListItem" skin="" position="227 0 100 71">
+                <Property key="Caption" value="Count"/>
+                <Property key="ItemResizingPolicy" value="Fixed"/>
+                <Property key="ItemWidth" value="100"/>
+                <Property key="FontHeight" value="5"/>
+                <Property key="TextAlign" value="Right VCenter"/>
+            </Widget>
+        </Widget>
+        <Widget type="MultiListBox" skin="MultiListBox" position="0 135 335 145" name="_Players">
+            <Widget type="MultiListItem" skin="" position="0 0 72 116">
+                <Property key="Caption" value="Name"/>
+                <Property key="ItemResizingPolicy" value="Fill"/>
+            </Widget>
+            <Widget type="MultiListItem" skin="" position="72 0 100 116">
+                <Property key="Caption" value="Clan"/>
+                <Property key="ItemResizingPolicy" value="Fixed"/>
+                <Property key="ItemWidth" value="100"/>
+            </Widget>
+            <Widget type="MultiListItem" skin="" position="172 0 45 116">
+                <Property key="Caption" value="Range"/>
+                <Property key="ItemResizingPolicy" value="Fixed"/>
+                <Property key="ItemWidth" value="45"/>
+            </Widget>
+            <Widget type="MultiListItem" skin="" position="217 0 40 116">
+                <Property key="Caption" value="Class"/>
+                <Property key="ItemResizingPolicy" value="Fixed"/>
+                <Property key="ItemWidth" value="40"/>
+            </Widget>
+            <Widget type="MultiListItem" skin="" position="257 0 70 116">
+                <Property key="Caption" value="Aggro"/>
+                <Property key="ItemResizingPolicy" value="Fixed"/>
+                <Property key="ItemWidth" value="70"/>
+            </Widget>
+        </Widget>
+        <Widget type="MultiListBox" skin="MultiListBox" position="0 0 335 135" name="_Targets">
+            <Widget type="MultiListItem" skin="" position="0 0 115 106">
+                <Property key="Caption" value="Target"/>
+                <Property key="ItemResizingPolicy" value="Fixed"/>
+                <Property key="ItemWidth" value="115"/>
+            </Widget>
+            <Widget type="MultiListItem" skin="" position="115 0 115 106">
+                <Property key="Caption" value="Victim"/>
+                <Property key="ItemResizingPolicy" value="Fixed"/>
+                <Property key="ItemWidth" value="115"/>
+            </Widget>
+            <Widget type="MultiListItem" skin="" position="230 0 50 106">
+                <Property key="Caption" value="Class"/>
+                <Property key="ItemResizingPolicy" value="Fixed"/>
+                <Property key="ItemWidth" value="50"/>
+            </Widget>
+            <Widget type="MultiListItem" skin="" position="280 0 47 106">
+                <Property key="Caption" value="Range"/>
+                <Property key="ItemResizingPolicy" value="Fill"/>
+            </Widget>
+        </Widget>
+    </Widget>
+</MyGUI>

@@ -1,0 +1,19 @@
+div.sidebar-menu-inner
+	header.logo-env(style="padding:0 !important;")
+		div.mobile-menu-toggle.visible-xs
+			a(href="#")
+				i.fa-bell-o
+				span.badge.badge.success
+			a(href="#")
+				i.fa-bars
+	ul#main-menu.main-menu
+		li(ng-repeat="item in broker.menu track by $index" class="{{item.state === broker.current ? 'active' : ''}}")
+			a(ng-click="broker.go(item.state)" href="#")
+				i(class="fa {{item.icon}}")
+				span.title.pull-right {{item.title}}
+	header.logo-env(style="padding:0 !important;border-bottom:none;")
+		div.logo.text-center(style="float:none;position: absolute;bottom: 0px;width: 340px;")
+				a(ui-sref="broker.main").logo-expanded
+					img(src="assets/images/l2brokertext.png" width="260" alt="")
+				a(ui-sref="broker.main").logo-collapsed
+					img(src="assets/images/l2brokertext.png" width="90" alt="")

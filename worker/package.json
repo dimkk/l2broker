@@ -1,0 +1,51 @@
+{
+  "name": "l-2-broker-worker",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "",
+  "author": {
+    "name": "dimkk",
+    "email": "dimkk@outlook.com",
+    "url": ""
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "keywords": [],
+  "repository": "/l-2-broker-worker",
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.9.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-babel": "^5.1.0",
+    "del": "^2.0.2",
+    "babel-core": "^5.5.0",
+    "isparta": "^3.0.3"
+  },
+  "scripts": {},
+  "private": true,
+  "dependencies": {
+    "async": "^1.5.0",
+    "bluebird": "^3.0.6",
+    "cheerio": "^0.19.0",
+    "console-stamp": "^0.2.0",
+    "del": "^2.2.0",
+    "emailjs": "^1.0.1",
+    "gulp-duration": "0.0.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-watch": "^4.3.5",
+    "lodash": "^3.10.1",
+    "moment": "^2.10.6",
+    "mongodb": "^2.1.16",
+    "mongoose": "^4.2.9",
+    "multi-glob": "^1.0.1",
+    "q": "^1.4.1",
+    "request": "^2.67.0",
+    "through2": "^2.0.0"
+  }
+}

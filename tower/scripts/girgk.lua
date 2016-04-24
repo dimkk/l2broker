@@ -1,0 +1,23 @@
+SCONFIG = L2TConfig.GetConfig();
+SCONFIG_FILE = GetDir() .. '\\scripts\\girgk.l2b';
+L2TConfig.SaveConfig(SCONFIG_FILE);
+moveDistance = 30;
+
+MoveTo(82853, 149250, -3464, moveDistance);
+MoveTo(83146, 148923, -3440, moveDistance);
+MoveTo(83275, 148875, -3400, moveDistance);
+MoveTo(83319, 148819, -3400, moveDistance);
+MoveTo(83336, 148363, -3400, moveDistance);
+MoveTo(83328, 148153, -3400, moveDistance);
+TargetNpc("Кларисса", 30080);
+MoveTo(83424, 148014, -3400, moveDistance);
+Talk();
+ClickAndWait("teleport_request", "Teleport");
+ClickAndWait("teleport_3539076864_6_57_1209025476_1", "1010005 - 29000 1000308");
+WaitForTeleport();
+MoveTo(-12782, 122774, -3112, moveDistance);
+TargetNpc("Продавец Лотерейных Билетов", 30990);
+MoveTo(-12663, 122798, -3112, moveDistance);
+MoveTo(-12609, 122812, -3111, moveDistance);
+MoveTo(-12618, 122811, -3112, moveDistance);
+L2TConfig.LoadConfig(SCONFIG_FILE);

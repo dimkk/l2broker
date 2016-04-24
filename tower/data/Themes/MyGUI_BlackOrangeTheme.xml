@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="List">
+	<List file="MyGUI_BlackOrangeImages.xml"/>
+	<List file="MyGUI_BlackOrangeSkins.xml"/>
+	<List file="MyGUI_BlackOrangeTemplates.xml"/>
+	<List file="MyGUI_FrameworkSkin.xml" />
+</MyGUI>

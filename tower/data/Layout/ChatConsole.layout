@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelSkin" position="100 85 455 290">
+        <Widget type="EditBox" skin="EditBox" position="5 260 445 25" name="command">
+            <Property key="FontName" value="Default"/>
+        </Widget>
+        <Widget type="ListBox" skin="ListBox_Dark" position="5 5 445 255" name="chat"/>
+    </Widget>
+</MyGUI>

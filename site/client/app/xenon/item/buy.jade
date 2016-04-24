@@ -1,0 +1,25 @@
+div.table-wrapper.dataTables_wrapper.form-inline.dt-bootstrap
+	div.table-responsive
+		table.table.table-small-font.table-bordered.table-hover.dataTable(width="100%" style="width:100%")
+			thead
+				tr
+					th #
+					th Name
+					th.sorting(ng-click="vm.changeSortBuy('buyers.price')") Price 
+						// a(ng-click="vm.changeSortPrice('price')")
+						// 	i(class="fa-arrow-circle-{{vm.sorts['price'] ? 'down' : 'up'}}")
+									
+					th.sorting(ng-click="vm.changeSortBuy('buyers.q')") Amount
+					th City
+					th.sorting(ng-click="vm.changeSortBuy('buyers.date')") Date
+			tbody(infinite-scroll='vm.getItemBuyMore()' infinite-scroll-disabled='vm.loading || vm.scrollDisable' infinite-scroll-distance='1')
+				tr(ng-repeat="item in vm.buyers track by $index")
+					td {{$index + 1}}
+					td
+						{{item.name.replace('.store', '')}}
+					td {{item.price | number:0}}
+					td {{item.q}}
+					td {{item.city}}
+					td {{item.date | elapsed}}						
+		div.loading-container(ng-show='vm.loading')
+						div.loader-content-2

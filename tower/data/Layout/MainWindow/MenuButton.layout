@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 22 22" name="_Main">
+        <Widget type="Button" skin="Button" position="0 0 22 22" name="_button">
+            <Property key="TextAlign" value="Left VCenter"/>
+            <Property key="NeedToolTip" value="true"/>
+            <Property key="NeedMouse" value="true"/>
+            <Widget type="ImageBox" skin="ImageBox" position="2 2 16 16" name="_image">
+                <Property key="NeedMouse" value="false"/>
+                <Property key="NeedKey" value="false"/>
+                <Property key="NeedToolTip" value="false"/>
+            </Widget>
+        </Widget>
+    </Widget>
+</MyGUI>

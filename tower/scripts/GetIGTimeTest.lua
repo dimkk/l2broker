@@ -1,0 +1,1 @@
+ShowToClient(tostring(math.floor(GetIGTime())),tostring(math.floor(GetIGTime() * 60) % 60));
