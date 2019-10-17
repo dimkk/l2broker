@@ -72,7 +72,7 @@
     "grunt-express-server": "^0.5.1",
     "grunt-postcss": "~0.7.1",
     "grunt-open": "~0.2.3",
-    "open": "~0.0.4",
+    "open": "~7.0.0",
     "jshint-stylish": "~2.1.0",
     "connect-livereload": "^0.5.3",
     "mocha": "^2.2.5",
