@@ -42,7 +42,7 @@
     "lodash": "^3.10.1",
     "moment": "^2.10.6",
     "mongodb": "^2.1.16",
-    "mongoose": "^4.2.9",
+    "mongoose": "^5.7.6",
     "multi-glob": "^1.0.1",
     "q": "^1.4.1",
     "request": "^2.67.0",
