@@ -39,7 +39,7 @@
     "gulp-duration": "0.0.0",
     "gulp-plumber": "^1.0.1",
     "gulp-watch": "^4.3.5",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.19",
     "moment": "^2.10.6",
     "mongodb": "^2.1.16",
     "mongoose": "^4.2.9",
