@@ -41,7 +41,7 @@
     "gulp-watch": "^4.3.5",
     "lodash": "^3.10.1",
     "moment": "^2.10.6",
-    "mongodb": "^2.1.16",
+    "mongodb": "^3.6.1",
     "mongoose": "^4.2.9",
     "multi-glob": "^1.0.1",
     "q": "^1.4.1",
